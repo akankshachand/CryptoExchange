@@ -65,7 +65,7 @@ app.get('/', function (req, res) {
     				var obj_eth_bid_2 = parseFloat(obj_eth_bid_2_st).toFixed(2)
     				var obj_eth_ask_2_st = doneAPIeth2['Realtime Currency Exchange Rate']['9. Ask Price'].toString()
 		    		var obj_eth_ask_2 = parseFloat(obj_eth_ask_2_st).toFixed(2)
-			    	res.render('\home', {
+			    	res.render('home.handlebars', {
 			    		btc_bid_1: doneAPIbtc.bid,
 			    		btc_ask_1: doneAPIbtc.ask,
 			    		eth_bid_1: doneAPIeth.bid,
