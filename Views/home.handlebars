@@ -1,0 +1,55 @@
+<br/>
+<img class="src" src={{btc_url}} alt="BTC"></img><h3> BITCOIN </h3>
+<br/>
+
+<div class="jumbotron row">
+
+	<div class="column">
+
+		<div class="list-group">
+	  		<h5> <a href = https://www.bitstamp.net/ target="_blank" class="list-group-item list-group-item-action active"> Bitstamp </a> </h5>
+	  		<a class="list-group-item list-group-item-action"> <strong> Buying Price: </strong> {{btc_bid_1}}{{#if (apiNameBS btc_bid_min)}}  <sup> <span class="badge badge-success"> Recommended </span> </sup>{{/if}} </a>
+	  		<a class="list-group-item list-group-item-action"> <strong> Selling Price: </strong> {{btc_ask_1}}{{#if (apiNameBS btc_ask_max)}}  <sup> <span class="badge badge-success"> Recommended </span> </sup>{{/if}} </a>
+		</div>
+
+  	</div>
+  	
+  	<div class="column">
+	
+	  	<div class="list-group">
+	  		<h5> <a href = "https://www.alphavantage.co" target="_blank" class="list-group-item list-group-item-action active"> Alpha Vantage </a> </h5>
+	  		<a class="list-group-item list-group-item-action"> <strong> Buying Price: </strong> {{btc_bid_2}} {{#if (apiNameAV btc_bid_min)}}  <sup> <span class="badge badge-success">Recommended</span></sup>{{/if}} </a>
+	  		<a class="list-group-item list-group-item-action"> <strong> Selling Price: </strong> {{btc_ask_2}}{{#if (apiNameAV btc_ask_max)}}  <sup> <span class="badge badge-success">Recommended</span> </sup>{{/if}} </a>
+		</div>
+
+	</div>
+
+</div>
+
+<br/>
+<img class="src" src={{eth_url}} alt="ETH"></img><br/><h3> ETHEREM </h3>
+</br>
+
+<div class="jumbotron row">
+
+  	<div class="column">
+
+	  	<div class="list-group">
+	  		<h5><a href = https://www.bitstamp.net/ target="_blank" class="list-group-item list-group-item-action active"> Bitstamp </a> </h5>
+	  		<a class="list-group-item list-group-item-action"><strong> Buying Price: </strong> {{eth_bid_1}}{{#if (apiNameBS eth_bid_min)}}  <sup> <span class="badge badge-success">Recommended</span> </sup>{{/if}} </a>
+	  		<a class="list-group-item list-group-item-action"><strong> Selling Price: </strong> {{eth_ask_1}}{{#if (apiNameBS eth_ask_max)}}  <sup> <span class="badge badge-success">Recommended</span> </sup>{{/if}} </a>
+		</div>
+
+  	</div>
+
+  	<div class="column">
+
+	  	<div class="list-group">
+	  		<h5> <a href = "https://www.alphavantage.co" target="_blank" class="list-group-item list-group-item-action active"> Alpha Vantage </a> </h5>
+	  		<a class="list-group-item list-group-item-action"><strong> Buying Price: </strong> {{eth_bid_2}}{{#if (apiNameAV eth_bid_min)}}  <sup> <span class="badge badge-success">Recommended</span> </sup>{{/if}} </a>
+	  		<a class="list-group-item list-group-item-action"><strong> Selling Price: </strong> {{eth_ask_2}}{{#if (apiNameAV eth_ask_max)}}  <sup> <span class="badge badge-success">Recommended</span> </sup>{{/if}} </a>
+		</div>
+
+	</div>
+
+</div>
