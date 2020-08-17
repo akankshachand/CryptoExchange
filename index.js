@@ -101,6 +101,6 @@ app.get('/about.html', function (req, res) {
     res.render('about');
 });
 
-app.use(express.static(path.join(__dirname, 'Public/')));
+app.use(express.static(path.join(__dirname, 'public/')));
 
 app.listen(PORT, () => console.log('Server Listening on Port ' + PORT));
